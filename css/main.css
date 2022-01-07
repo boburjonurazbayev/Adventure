@@ -1,0 +1,12 @@
+.heading {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}

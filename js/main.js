@@ -40,5 +40,5 @@ if (totalMoney > adventureCost) {
 } else if (totalMoney === adventureCost) {
     elText.textContent = 'Sizning ortiqcha pulingiz qolmadi'
 } else {
-    elText.textContent = 'Sizga ' + needMoney.toFixed(1) + ' so`m pulingiz yetishmas ekan'
+    elText.textContent =  needMoney.toFixed(1) + ' so`m pulingiz yetishmas ekan'
 }

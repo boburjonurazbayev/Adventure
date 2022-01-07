@@ -22,7 +22,7 @@ var hotelCostSum = hotelCostDollar * dollarSum;
 
 var restCostSum = restCostEuro * euroSum;
 
-var adventureCost = (ticketCostSum + hotelCostSum + restCostSum);
+var adventureCost = ticketCostSum + hotelCostSum + restCostSum;
 
 var needMoney = adventureCost - totalMoney;
 
@@ -35,8 +35,10 @@ if (totalMoney >= adventureCost) {
     elHeading.textContent = userName + ' aka ozgina sabr qilishingiz kerak bo`lar ekan'
 }
 
-if (totalMoney >= adventureCost) {
+if (totalMoney > adventureCost) {
     elText.textContent = 'Sizda ' + overMoney.toFixed(1) + ' so`m ortiqcha pulingiz qolar ekan'
+} else if (totalMoney === adventureCost) {
+    elText.textContent = 'Sizning ortiqcha pulingiz qolmadi'
 } else {
     elText.textContent = 'Sizga ' + needMoney.toFixed(1) + ' so`m pulingiz yetishmas ekan'
 }

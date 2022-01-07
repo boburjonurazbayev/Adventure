@@ -4,7 +4,7 @@ var elText = document.querySelector('.text')
 
 var userName = prompt('Assalomu alaykum. Ismingizni yozing:', 'John');
 
-var totalMoney = Number(prompt('Qancha pul jamg`argansiz', '0' ));
+var totalMoney = Number(prompt('Qancha pul jamg`argansiz', '8317488.6' ));
 
 var ticketCostDollar = 500;
 
@@ -28,7 +28,6 @@ var needMoney = adventureCost - totalMoney;
 
 var overMoney = totalMoney - adventureCost;
 
-console.log(adventureCost);
 
 if (totalMoney >= adventureCost) {
     elHeading.textContent = 'Oq yo`l ' + userName + ' aka'
@@ -39,5 +38,5 @@ if (totalMoney >= adventureCost) {
 if (totalMoney >= adventureCost) {
     elText.textContent = 'Sizda ' + overMoney.toFixed(1) + ' so`m ortiqcha pulingiz qolar ekan'
 } else {
-    elText.textContent = 'Sizga ' + needMoney.toFixed(1) + ' so`m pulingiz yetmas ekan ekan'
+    elText.textContent = 'Sizga ' + needMoney.toFixed(1) + ' so`m pulingiz yetishmas ekan'
 }
